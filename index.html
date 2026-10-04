@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Meal - Healthy Food Delivery</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- TOPBAR -->
+    <div class="topbar d-none d-lg-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="topbar-left d-flex align-items-center gap-4">
+                <span class="topbar-item">
+                    <i class="fa-solid fa-location-dot topbar-icon"></i> 900 Lucerne Terrace, Orlando, FL 32806
+                </span>
+                <span class="topbar-item">
+                    <i class="fa-solid fa-phone topbar-icon"></i> +49260-5731-08
+                </span>
+                <span class="topbar-item">
+                    <i class="fa-solid fa-envelope topbar-icon"></i> support@fitmeal.com
+                </span>
+            </div>
+            <div class="topbar-right d-flex align-items-center gap-3">
+                <a href="#" class="topbar-action-icon" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#login.html" class="topbar-action-icon" aria-label="Account">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <a href="#cart.html" class="topbar-action-icon position-relative" aria-label="Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-divider"></div>
+
+    <!-- NAVBAR -->
+    <header class="sticky-top bg-white">
+        <nav class="navbar-expand-lg navbar-light custom-navbar">
+            <div class="container navbar">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="./assets/images/logo1.svg" alt="Fitmeal Food Delivery">
+                </a>
+                <!-- Toggle Button -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <!-- Navbar Content -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+
+                    <ul class="navbar-nav mx-lg-auto text-center text-lg-start">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#index.html">
+                                Home <i class="fa-solid fa-chevron-right nav-arrow"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about.html">
+                                About Us <i class="fa-solid fa-chevron-right nav-arrow"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products.html">
+                                Products <i class="fa-solid fa-chevron-right nav-arrow"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog.html">
+                                Blog <i class="fa-solid fa-chevron-right nav-arrow"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact.html">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pages.html">
+                                Pages <i class="fa-solid fa-chevron-right nav-arrow"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#multipage.html">
+                                Multipage
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Button -->
+                    <div class="d-flex justify-content-center justify-content-lg-end mt-3 mt-lg-0">
+                        <a href="#menu.html" class="btn btn-danger px-4 py-2 rounded-pill">
+                            Get Menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-section d-flex align-items-center position-relative">
+            <!-- Left Slider Arrow -->
+            <button class="hero-slider-btn position-absolute start-0 top-50 translate-middle-y ms-3"
+                aria-label="Previous Slide">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <!-- Centered Content -->
+            <div class="container hero-content w-100">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 text-light text-center d-flex flex-column align-items-center">
+                        <h1 class="hero-title mb-3">Healthy food delivery</h1>
+                        <p class="hero-subtitle mb-4">
+                            Duis eu commodo massa. Integer volutpat imperdiet libero vel laoreet. Sed euismod a ligula
+                            quis suscipit. Suspendisse potenti. Proin <br> porta tristique urna, id commodo
+                        </p>
+                        <div class="d-flex align-items-center justify-content-center gap-5">
+                            <a href="#" class="btn btn-red-pill">Read More</a>
+                            <a href="#" class="btn btn-green-pill">View Plans</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Slider Arrow -->
+            <button class="hero-slider-btn position-absolute end-0 top-50 translate-middle-y me-3"
+                aria-label="Next Slide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </section>
+
+        <section class="hero-cards-wrapper">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Card 1 -->
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="floating-card position-relative d-flex align-items-center">
+                            <div class="card-img-wrapper">
+                                <img src="./assets/images/Layer11.svg" alt="Muscle Gain Menu" class="card-food-img">
+                            </div>
+                            <div class="card-content ps-4">
+                                <h6 class="card-title fw-bold mb-1">Muscle Gain Menu</h6>
+                                <span class="card-kcal text-muted small d-block mb-3">1400–2000 kcal</span>
+                                <div class="d-flex gap-2">
+                                    <a href="#menu.html" class="btn btn-sm btn-red-pill">Get More</a>
+                                    <a href="#about.html"
+                                        class="btn btn-sm btn-link text-dark text-decoration-none">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="floating-card position-relative d-flex align-items-center">
+                            <div class="card-img-wrapper">
+                                <img src="./assets/images/Layer11.svg" alt="Slimming Menu" class="card-food-img">
+                            </div>
+                            <div class="card-content ps-4">
+                                <h6 class="card-title fw-bold mb-1">Slimming Menu</h6>
+                                <span class="card-kcal text-muted small d-block mb-3">800–1000 kcal</span>
+                                <div class="d-flex gap-2">
+                                    <a href="#menu.html" class="btn btn-sm btn-red-pill">Get More</a>
+                                    <a href="#about.html"
+                                        class="btn btn-sm btn-link text-dark text-decoration-none">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="floating-card position-relative d-flex align-items-center">
+                            <div class="card-img-wrapper">
+                                <img src="./assets/images/Layer13.svg" alt="Balanced Menu" class="card-food-img">
+                            </div>
+                            <div class="card-content ps-4">
+                                <h6 class="card-title fw-bold mb-1">Balanced Menu</h6>
+                                <span class="card-kcal text-muted small d-block mb-3">1200–1400 kcal</span>
+                                <div class="d-flex gap-2">
+                                    <a href="#menu.html" class="btn btn-sm btn-red-pill">Get More</a>
+                                    <a href="#about.html"
+                                        class="btn btn-sm btn-link text-dark text-decoration-none">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section">
+            <div class="container">
+                <div class="row align-items-center g-4">
+
+                    <!-- Left Content -->
+                    <div class="col-lg-5 col-md-6">
+                        <h2 class="about-title mb-3">
+                            Healthy and tasty food with<br>
+                            <span class="highlight-text">natural ingredients</span>
+                        </h2>
+                        <p class="about-description mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
+                            ullamcorper mattis, pulvinar dapibus leo. Fresh organic produce crafted by top chefs.
+                        </p>
+                        <a href="#" class="btn btn-red-pill">Find Plan</a>
+                    </div>
+
+                    <!-- Middle Image -->
+                    <div class="col-lg-4 col-md-6 about-img-container">
+                        <img src="./assets/images/Layer14.svg" alt="Natural Ingredients" class="img-fluid">
+                    </div>
+
+                    <!-- Right Feature List -->
+                    <div class="col-lg-3 col-md-12">
+                        <ul class="about-checklist">
+                            <li><i class="fa-solid fa-check"></i> 100% Organic</li>
+                            <li><i class="fa-solid fa-check"></i> Fresh Ingredients</li>
+                            <li><i class="fa-solid fa-check"></i> Proper Portion</li>
+                            <li><i class="fa-solid fa-check"></i> Fast Delivery</li>
+                            <li><i class="fa-solid fa-check"></i> Easy Ordering</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="why-choose-us-section">
+            <div class="container">
+
+                <!-- Section Header -->
+                <div class="text-center section-header">
+                    <span class="sub-title-script d-block">Our benefits</span>
+                    <h2 class="section-main-title">Why customer choose us</h2>
+                    <p class="section-header-desc">
+                        Quisque pretium dolor turpis, quis blandit turpis semper ut. Nam malesuada eros nec luctus
+                        laoreet. Fusce sodales consequat velit eget dictum. Integer ornare magna vitae ex eleifend
+                        congue. Morbi sit amet nisi iaculis, fringilla orci nec.
+                    </p>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="row g-4 justify-content-center features-row">
+
+                    <!-- Feature 1 -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="feature-box">
+                            <div class="feature-icon-wrapper">
+                                <img src="./assets/images/ob1.svg" alt="Only natural food">
+                            </div>
+                            <h5 class="feature-title">Only natural food</h5>
+                            <p class="feature-desc">Nam malesuada eros nec luctus laoreet fusce sodales consequat</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="feature-box">
+                            <div class="feature-icon-wrapper">
+                                <img src="./assets/images/ob2.svg" alt="Various dishes">
+                            </div>
+                            <h5 class="feature-title">Various dishes</h5>
+                            <p class="feature-desc">Nullam faucibus a libero quis vestibulum proin vestibulum</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="feature-box">
+                            <div class="feature-icon-wrapper">
+                                <img src="./assets/images/ob3.svg" alt="Handy packaging">
+                            </div>
+                            <h5 class="feature-title">Handy packaging</h5>
+                            <p class="feature-desc">est bulum ante ipsum primis in faucibus orci luctus et ultrices</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="feature-box">
+                            <div class="feature-icon-wrapper">
+                                <img src="./assets/images/ob4.svg" alt="No frying">
+                            </div>
+                            <h5 class="feature-title">No frying</h5>
+                            <p class="feature-desc">Donec vitae turpis orci. In dignissim risus sed iaculis laoreet</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Plate Image -->
+                <div class="text-center plate-img-container">
+                    <img src="./assets/images/Layer16.svg" alt="Fresh Healthy Food Plate" class="plate-img">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHOOSE YOUR NUTRITION -->
+        <section class="choose-meal-section position-relative overflow-hidden">
+            <div class="container position-relative z-1">
+
+                <div class="choose-meal-card-wrapper position-relative mx-auto">
+
+                    <img src="./assets/images/cyn-lettuce-left.svg" alt="lettuce-left"
+                        class="bg-leaf bg-leaf-left pointer-events-none">
+                    <img src="./assets/images/cyn-lettuce-right.svg" alt="lettuce-right"
+                        class="bg-leaf bg-leaf-right pointer-events-none">
+
+                    <!-- Central White Card -->
+                    <div class="choose-meal-card position-relative z-2">
+
+                        <!-- Section Heading -->
+                        <div class="text-center mb-4">
+                            <span class="sub-title-script d-block">Nutrition plans</span>
+                            <h2 class="section-main-title">Choose Your Nutrition</h2>
+                        </div>
+
+                        <!-- Navigation Tabs -->
+                        <ul class="nav nav-tabs meal-tabs mb-4 mb-lg-5 justify-content-center border-0" id="mealTab"
+                            role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="slimming-tab" data-bs-toggle="tab"
+                                    data-bs-target="#slimming" type="button" role="tab">Slimming Menu</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="muscle-tab" data-bs-toggle="tab" data-bs-target="#muscle"
+                                    type="button" role="tab">Muscle Gain Menu</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="balance-tab" data-bs-toggle="tab" data-bs-target="#balance"
+                                    type="button" role="tab">Balanced Menu</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="office-tab" data-bs-toggle="tab" data-bs-target="#office"
+                                    type="button" role="tab">Office Menu</button>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Content Area -->
+                        <div class="tab-content" id="mealTabContent">
+                            <div class="tab-pane fade show active" id="slimming" role="tabpanel">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-lg-6 meal-image-wrap">
+                                        <img src="./assets/images/cyn3.svg" alt="Slimming Menu"
+                                            class="img-fluid meal-card-img">
+                                    </div>
+                                    <div class="col-lg-6 ps-lg-4">
+                                        <h3 class="meal-details-title mb-1">Slimming Menu</h3>
+                                        <span class="meal-kcal-tag d-block mb-3">800-1000 kcal</span>
+                                        <p class="meal-description mb-4">
+                                            Aliquam semper elit sit amet lorem commodo, ac feugiat sapien fermentum.
+                                            Quisque iaculis, eros a interdum hendrerit, nulla lectus suscipit nisi,
+                                            vitae sagittis ipsum nunc id sem.
+                                        </p>
+                                        <div class="meal-price mb-4">45.99/week</div>
+                                        <div class="d-flex gap-2 align-items-center flex-wrap">
+                                            <a href="#cart.html" class="btn btn-red-pill">Order now</a>
+                                            <a href="#menu.html" class="btn btn-green-pill">View menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="muscle" role="tabpanel">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-lg-6 meal-image-wrap">
+                                        <img src="./assets/images/cyn3.svg" alt="Muscle Gain Menu"
+                                            class="img-fluid meal-card-img">
+                                    </div>
+                                    <div class="col-lg-6 ps-lg-4">
+                                        <h3 class="meal-details-title mb-1">Muscle Gain Menu</h3>
+                                        <span class="meal-kcal-tag d-block mb-3">1800-2200 kcal</span>
+                                        <p class="meal-description mb-4">
+                                            Aliquam semper elit sit amet lorem commodo, ac feugiat sapien fermentum.
+                                            Quisque iaculis, eros a interdum hendrerit, nulla lectus suscipit nisi.
+                                        </p>
+                                        <div class="meal-price mb-4">55.99/week</div>
+                                        <div class="d-flex gap-2 align-items-center flex-wrap">
+                                            <a href="#cart.html" class="btn btn-red-pill">Order now</a>
+                                            <a href="#menu.html" class="btn btn-green-pill">View menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="balance" role="tabpanel">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-lg-6 meal-image-wrap">
+                                        <img src="./assets/images/cyn3.svg" alt="Balanced Menu"
+                                            class="img-fluid meal-card-img">
+                                    </div>
+                                    <div class="col-lg-6 ps-lg-4">
+                                        <h3 class="meal-details-title mb-1">Balanced Menu</h3>
+                                        <span class="meal-kcal-tag d-block mb-3">1200-1400 kcal</span>
+                                        <p class="meal-description mb-4">
+                                            Aliquam semper elit sit amet lorem commodo, ac feugiat sapien fermentum.
+                                            Quisque iaculis, eros a interdum hendrerit, nulla lectus suscipit nisi.
+                                        </p>
+                                        <div class="meal-price mb-4">49.99/week</div>
+                                        <div class="d-flex gap-2 align-items-center flex-wrap">
+                                            <a href="#cart.html" class="btn btn-red-pill">Order now</a>
+                                            <a href="#menu.html" class="btn btn-green-pill">View menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="office" role="tabpanel">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-lg-6 meal-image-wrap">
+                                        <img src="./assets/images/cyn3.svg" alt="Office Menu"
+                                            class="img-fluid meal-card-img">
+                                    </div>
+                                    <div class="col-lg-6 ps-lg-4">
+                                        <h3 class="meal-details-title mb-1">Office Menu</h3>
+                                        <span class="meal-kcal-tag d-block mb-3">1000-1200 kcal</span>
+                                        <p class="meal-description mb-4">
+                                            Aliquam semper elit sit amet lorem commodo, ac feugiat sapien fermentum.
+                                            Quisque iaculis, eros a interdum hendrerit, nulla lectus suscipit nisi.
+                                        </p>
+                                        <div class="meal-price mb-4">42.99/week</div>
+                                        <div class="d-flex gap-2 align-items-center flex-wrap">
+                                            <a href="#cart.html" class="btn btn-red-pill">Order now</a>
+                                            <a href="#menu.html" class="btn btn-green-pill">View menu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRIAL DAY BANNER -->
+        <section class="trial-banner-section position-relative overflow-hidden text-center">
+
+            <div class="container position-relative z-2 h-100 d-flex align-items-center justify-content-center">
+                <div class="row justify-content-center w-100">
+                    <div class="col-lg-8 col-md-10">
+                        <h2 class="trial-banner-title mb-2">Trial Day</h2>
+                        <div class="trial-banner-price mb-4">
+                            for only <span class="highlight-green">5 dollars</span>
+                        </div>
+                        <a href="#cart.html" class="btn btn-red-pill">Order now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Wave Separator -->
+            <div class="banner-wave-bottom position-absolute start-0 w-100">
+                <svg viewBox="0 0 1440 180" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-100 d-block">
+                    <path d="M0,130 C340,190 560,40 900,130 C1140,190 1340,90 1440,120 L1440,180 L0,180 Z"
+                        fill="#ffffff"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- FREE FOOD DELIVERY -->
+        <section class="delivery-section bg-white position-relative">
+            <div class="container">
+                <div class="row align-items-center g-4">
+
+                    <!-- Left Details Column -->
+                    <div class="col-lg-5 col-md-6">
+                        <h2 class="delivery-title mb-3">
+                            <span class="highlight-green">Free</span> Food Delivery every<br>
+                            day at your convenience
+                        </h2>
+                        <p class="delivery-description mb-4">
+                            Quisque pretium dolor turpis, quis blandit suscipit semper us.
+                            Nulla malesuada lectus nec lectus luctus. Fusce sodales consequat
+                            velit eget dictum. Integer ornare magna.
+                        </p>
+
+                        <!-- Contact & Feature List -->
+                        <ul class="delivery-info-list p-0 mb-4">
+                            <li class="delivery-info-item d-flex align-items-center gap-3 mb-custom-gap">
+                                <div class="delivery-info-icon">
+                                    <img src="./assets/images/Layer22.svg" alt="Clock Icon" class="img-fluid">
+                                </div>
+                                <span class="info-text">Every day from 8:00 to 12:00</span>
+                            </li>
+                            <li class="delivery-info-item d-flex align-items-center gap-3">
+                                <div class="delivery-info-icon">
+                                    <img src="./assets/images/Layer23.svg" alt="Phone Icon" class="img-fluid">
+                                </div>
+                                <span class="info-text">+49260-5731-08</span>
+                            </li>
+                        </ul>
+
+                        <a href="#about.html" class="btn btn-red-pill px-4 py-2 mt-2">Read more</a>
+                    </div>
+
+                    <!-- Right Image Banner -->
+                    <div class="col-lg-7 col-md-6 delivery-image-wrap text-center text-lg-end">
+                        <img src="./assets/images/Layer20.svg" alt="Free Food Delivery Van and Courier"
+                            class="delivery-img">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials-section position-relative text-center overflow-hidden">
+            <!-- Top Wave Curve -->
+            <div class="testimonials-wave-top position-absolute start-0 w-100">
+                <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-100 d-block">
+                    <path d="M0,30 C360,80 720,0 1080,50 C1260,75 1380,20 1440,30 L1440,0 L0,0 Z" fill="#ffffff"></path>
+                </svg>
+            </div>
+
+            <!-- Outer Relative Wrapper for Absolute Arrow Positioning -->
+            <div class="testimonial-slider-container position-relative mx-auto">
+
+                <!-- Left Nav Arrow (Outside Content) -->
+                <button class="testimonial-nav-btn nav-prev position-absolute" aria-label="Previous Review">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <!-- Right Nav Arrow (Outside Content) -->
+                <button class="testimonial-nav-btn nav-next position-absolute" aria-label="Next Review">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <div class="container position-relative z-2">
+                    <!-- Section Titles -->
+                    <div class="mb-4">
+                        <span class="sub-title-script d-block">Testimonials</span>
+                        <h2 class="section-main-title">What our client say</h2>
+                    </div>
+
+                    <!-- Quote Icon (54px x 34px) -->
+                    <div class="quote-icon-wrap mx-auto mb-3">
+                        <img src="./assets/images/quote.svg" alt="Quote Icon" class="quote-img">
+                    </div>
+
+                    <!-- Testimonial Content -->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 col-md-10">
+                            <p class="testimonial-quote mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis at turpis eu
+                                faucibus. In dignissim, enim eu ornare aliquet, metus ex tempor neque, sit amet
+                                efficitur turpis lorem et odio.
+                            </p>
+
+                            <!-- Avatar Circle (126px x 126px) -->
+                            <div class="avatar-wrap mx-auto">
+                                <img src="./assets/images/testimonial1.svg" alt="Client Review"
+                                    class="testimonial-avatar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fresh Vegetables Bottom Banner -->
+            <div class="veg-banner-wrap w-100">
+                <img src="./assets/images/Layer24.svg" alt="Fresh Vegetables" class="veg-banner-img img-fluid">
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section
+            class="newsletter-section text-center position-relative d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-11">
+                        <h2 class="newsletter-title mb-3">
+                            <span class="text-dark">Subscribe</span> to our newsletter
+                        </h2>
+                        <p class="newsletter-description mb-4">
+                            Quisque pretium dolor turpis, quis blandit turpis semper ut. Nam malesuada eros nec luctus
+                            laoreet. Quisque pretium dolor turpis, quis blandit.
+                        </p>
+
+                        <form class="newsletter-form mx-auto">
+                            <div class="newsletter-pill-input-wrap d-flex align-items-center position-relative">
+                                <input type="email" class="form-control newsletter-input border-0 ps-4"
+                                    placeholder="Your email..." required>
+                                <button class="btn btn-red-pill newsletter-btn" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECENT ARTICLES -->
+        <section class="articles-section bg-white text-center">
+            <div class="container">
+
+                <!-- Section Title -->
+                <div class="mb-5">
+                    <span class="sub-title-script d-block">Food blog</span>
+                    <h2 class="section-main-title">Recent articles</h2>
+                </div>
+
+                <div class="row custom-card-grid justify-content-center">
+
+                    <!-- Article 1 -->
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="article-card d-flex flex-column">
+                            <div class="article-img-wrapper position-relative">
+                                <img src="./assets/images/ra1.svg" alt="How many calories an adult needs per day"
+                                    class="img-fluid">
+                                <span class="article-badge">Nutritionist</span>
+                            </div>
+                            <div class="article-body d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h5 class="article-title mt-3">
+                                        <a href="#">How many calories an adult needs per day</a>
+                                    </h5>
+                                    <p class="article-desc">
+                                        Morbi volutpat nisl a ligula vestibulum placerat. Suspendisse venenatis pulvinar
+                                        nibh sed convallis. Cras elementum nunc a purus...
+                                    </p>
+                                </div>
+                                <div class="article-meta d-flex align-items-center justify-content-evenly pt-3">
+                                    <span><i class="fa-regular fa-calendar-check text-green me-1"></i> November 20,
+                                        2026</span>
+                                    <span><i class="fa-regular fa-comment text-green me-1"></i> 0 Comments</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="article-card d-flex flex-column">
+                            <div class="article-img-wrapper position-relative">
+                                <img src="./assets/images/ra2.svg" alt="Best product for fitness nutrition and muscles"
+                                    class="img-fluid">
+                                <span class="article-badge">Nutritionist</span>
+                            </div>
+                            <div class="article-body d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h5 class="article-title mt-3">
+                                        <a href="#">Best product for fitness nutrition and muscles</a>
+                                    </h5>
+                                    <p class="article-desc">
+                                        Morbi volutpat nisl a ligula vestibulum placerat. Suspendisse venenatis pulvinar
+                                        nibh sed convallis. Cras elementum nunc a purus...
+                                    </p>
+                                </div>
+                                <div class="article-meta d-flex align-items-center justify-content-evenly pt-3">
+                                    <span><i class="fa-regular fa-calendar-check text-green me-1"></i> November 20,
+                                        2026</span>
+                                    <span><i class="fa-regular fa-comment text-green me-1"></i> 0 Comments</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-center">
+                        <div class="article-card d-flex flex-column">
+                            <div class="article-img-wrapper position-relative">
+                                <img src="./assets/images/ra3.svg" alt="Best product for fitness nutrition and muscles"
+                                    class="img-fluid">
+                                <span class="article-badge">Nutritionist</span>
+                            </div>
+                            <div class="article-body d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h5 class="article-title mt-3">
+                                        <a href="#">Best product for fitness nutrition and muscles</a>
+                                    </h5>
+                                    <p class="article-desc">
+                                        Morbi volutpat nisl a ligula vestibulum placerat. Suspendisse venenatis pulvinar
+                                        nibh sed convallis. Cras elementum nunc a purus...
+                                    </p>
+                                </div>
+                                <div class="article-meta d-flex align-items-center justify-content-evenly pt-3">
+                                    <span><i class="fa-regular fa-calendar-check text-green me-1"></i> November 20,
+                                        2026</span>
+                                    <span><i class="fa-regular fa-comment text-green me-1"></i> 0 Comments</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Read More Button -->
+                <div class="text-center mt-5">
+                    <a href="#blog.html" class="btn btn-red-pill px-5 py-3">Read more</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--  FOOTER -->
+    <footer class="footer-section position-relative">
+        <div class="footer-waves-wrapper position-relative">
+            <svg class="footer-wave-green" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path fill="#8cb83a"
+                    d="M0,32L120,42.7C240,53,480,75,720,53.3C960,32,1200,64,1320,74.7L1440,85.3L1440,120L0,120Z"></path>
+            </svg>
+            <svg class="footer-wave-dark" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path fill="#252930"
+                    d="M0,64L80,53.3C160,43,320,21,480,32C640,43,800,85,960,85.3C1120,85,1280,43,1360,21.3L1440,0L1440,120L0,120Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-logo-wrap mb-3">
+                            <a href="#index.html">
+                                <img src="./assets/images/logo2.svg" alt="Fitmeal Food Delivery" class="footer-logo-img">
+                            </a>
+                        </div>
+                        <p class="footer-about-text mb-4">
+                            Integer maximus accumsan nunc, sit amet tempor lectus facilisis eu. Cras vel elit felis.
+                            Vestibulum convallis ipsum id aliquam varius.
+                        </p>
+                        <div class="d-flex align-items-center gap-3./assets">
+                            <a href="#" class="footer-social-icon"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="footer-social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="footer-social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="footer-social-icon"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-6">
+                        <h5 class="footer-title">Explore</h5>
+                        <ul class="footer-links">
+                            <li><a href="#index.html"><i class="fa-solid fa-chevron-right me-2 text-green"></i>Home</a>
+                            </li>
+                            <li><a href="#blog.html"><i class="fa-solid fa-chevron-right me-2 text-green"></i>Blog</a>
+                            </li>
+                            <li><a href="#products.html"><i
+                                        class="fa-solid fa-chevron-right me-2 text-green"></i>Products</a></li>
+                            <li><a href="#clients.html"><i
+                                        class="fa-solid fa-chevron-right me-2 text-green"></i>Clients</a></li>
+                            <li><a href="#contact.html"><i class="fa-solid fa-chevron-right me-2 text-green"></i>Contact
+                                    us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <h5 class="footer-title">Contact info</h5>
+                        <div class="footer-contact-item d-flex align-items-start mb-3">
+                            <i class="fa-solid fa-location-dot text-green mt-1 me-3 fs-5"></i>
+                            <div>
+                                <span class="d-block text-green fw-bold small">Our location:</span>
+                                <span class="footer-contact-val">Madrid, Spain</span>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item d-flex align-items-start">
+                            <i class="fa-solid fa-phone text-green mt-1 me-3 fs-5"></i>
+                            <div>
+                                <span class="d-block text-green fw-bold small">Phones:</span>
+                                <span class="footer-contact-val d-block">+49078-039-23-11</span>
+                                <span class="footer-contact-val d-block">+49078-028-55-60</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="footer-title">Instagram posts</h5>
+                        <p class="text-muted">...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
